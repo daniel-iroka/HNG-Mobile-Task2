@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homePageFragment">
+
+    <fragment
+        android:id="@+id/homePageFragment"
+        android:name="com.example.cvapplication.ui.HomePageFragment"
+        android:label="fragment_home_page"
+        tools:layout="@layout/fragment_home_page" >
+        <action
+            android:id="@+id/action_homePageFragment_to_editPageFragment"
+            app:destination="@id/editPageFragment"
+            app:popUpToInclusive="true"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/editPageFragment"
+        android:name="com.example.cvapplication.ui.EditPageFragment"
+        android:label="fragment_edit_page"
+        tools:layout="@layout/fragment_edit_page" >
+        <action
+            android:id="@+id/action_editPageFragment_to_homePageFragment"
+            app:destination="@id/homePageFragment"
+            app:popUpTo="id"/>
+        <argument
+            android:name="personalInfoArgs"
+            app:argType="com.example.cvapplication.model.PersonalInformation"/>
+    </fragment>
+
+</navigation>

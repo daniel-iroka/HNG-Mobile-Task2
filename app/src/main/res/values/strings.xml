@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">CvApplication</string>
+    <string name="full_name">Daniel C. Iroka</string>
+    <string name="slack_username">Daniel Iroka Chinedum</string>
+    <string name="github_handle">daniel-iroka</string>
+    <string name="edit_text_button">Edit</string>
+    <string name="bio">An entry-level Android Application Developer with 2+ years of experience,
+        I am hardworking and eager to learn. I strive to provide and adopt the best possible business
+        solutions for real-life problems, utilizing the available skills needed.</string>
+    <string name="resume_builder">Resume Builder</string>
+    <string name="full_name_header">Full name</string>
+    <string name="slack_username_header">Slack username</string>
+    <string name="github_handle_header">Github handle</string>
+    <string name="edit_resume">Edit Resume</string>
+    <string name="full_name_hint">Full name</string>
+    <string name="slack_username_hint">Slack username</string>
+    <string name="github_handle_hint">Github handle</string>
+    <string name="bio_hint">Bio</string>
+    <string name="save_details">Save Details</string>
+    <string name="successful_update_toast">"Successfully updated!"</string>
+    <string name="fill_out_fields">Please fill out all fields!</string>
+</resources>
