@@ -25,6 +25,13 @@ buildscript {
 
 In your App level gradle file
 ```
+plugins {
+    id 'androidx.navigation.safeargs'
+    id 'kotlin-parcelize'
+}
+```
+
+```
 implementation(platform("org.jetbrains.kotlin:kotlin-bom:1.8.0"))
 implementation "androidx.navigation:navigation-fragment-ktx:2.5.1"
 implementation "androidx.navigation:navigation-ui-ktx:2.5.1"
@@ -48,22 +55,23 @@ Android Gradle Plugin Version : '7.4.0-beta01'
 
 # Features
 ## Architecture
-Although a simple project, this app was built using the MVVM architecture which promotes seperation of
+Although a simple project, this app was built using the [MVVM](https://proandroiddev.com/understanding-mvvm-pattern-for-android-in-2021-98b155b37b54) architecture which promotes seperation of
 concerns, thereby ensuring scalability and robustness of this project if it decides to grow.
 
 ## About 
 - This App was built entirely using kotlin.
-- Makes use of the MVVM Architecture for sepeeration of concerns and project scalabity.
+- Makes use of the MVVM Architecture for seperation of concerns and project scalabity.
 - This App enables users to be able to both View and Edit their personal prefilled details.
 - Clean, readable and interactive UI.
 - Updates to user details happen dynamically in real time to enable smooth UI updates and overall good User experience.
 - No third party Dependencies were used in the making of this project, rather made good use of native libraries, dependencies and
-plugins were made good use of.
+plugins.
 
 ## Assumptions
 - Upon running the app for the first timee, it should come prefilled with the User's personal and professional details.
 - Users should also be able to edit this prefilled details and add their own.
-- Users should also be unable to add their details if they leave out an empty field.
+- Users should also be unable to add their details if they leave out an empty field for proper functioning of the app.
+- A Toast message should appear if the User successfully edits their details or leaves out an empty field. 
 - The project should also feature smooth navigation between the two screens without any issues. 
 
 ## Important Note
