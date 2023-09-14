@@ -17,7 +17,6 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 
 class HomePageFragment : Fragment() {
-
     private var _binding : FragmentHomePageBinding? = null
     private val binding get() = _binding !!
     private val viewModel : PersonalInformationSharedViewModel by activityViewModels()

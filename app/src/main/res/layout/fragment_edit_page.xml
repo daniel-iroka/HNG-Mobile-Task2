@@ -1,103 +1,109 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="30dp"
-    android:background="@color/horchata"
-    tools:context=".ui.EditPageFragment">
-
-    <com.google.android.material.textview.MaterialTextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
+    android:fillViewport="true">
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:text="@string/edit_resume"
-        android:textColor="@color/slack_red"
-        android:textSize="32sp"
-        android:textStyle="bold"
-        android:fontFamily="@font/open_sans_bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:padding="30dp"
+        android:background="@color/horchata"
+        tools:context=".ui.EditPageFragment">
 
-    <EditText
-        android:id="@+id/fullNameEdt"
-        android:layout_width="330dp"
-        android:layout_height="48dp"
-        android:ems="10"
-        android:hint="@string/full_name_hint"
-        android:inputType="textPersonName"
-        android:textSize="18sp"
-        android:fontFamily="@font/open_sans_regular"
-        android:layout_marginTop="37dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/edit_resume"
+            android:textColor="@color/slack_red"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/open_sans_bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
-    <EditText
-        android:id="@+id/slackUserNameEdt"
-        android:layout_width="330dp"
-        android:layout_height="48dp"
-        android:layout_marginTop="27dp"
-        android:ems="10"
-        android:hint="@string/slack_username_hint"
-        android:inputType="textPersonName"
-        android:textSize="18sp"
-        android:fontFamily="@font/open_sans_regular"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/fullNameEdt" />
+        <EditText
+            android:id="@+id/fullNameEdt"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:ems="10"
+            android:hint="@string/full_name_hint"
+            android:inputType="textPersonName"
+            android:textSize="18sp"
+            android:fontFamily="@font/open_sans_regular"
+            android:layout_marginTop="37dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
 
-    <EditText
-        android:id="@+id/githubHandleEdt"
-        android:layout_width="330dp"
-        android:layout_height="48dp"
-        android:layout_marginTop="27dp"
-        android:ems="10"
-        android:hint="@string/github_handle_hint"
-        android:textSize="18sp"
-        android:fontFamily="@font/open_sans_regular"
-        android:inputType="textPersonName"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/slackUserNameEdt" />
+        <EditText
+            android:id="@+id/slackUserNameEdt"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="27dp"
+            android:ems="10"
+            android:hint="@string/slack_username_hint"
+            android:inputType="textPersonName"
+            android:textSize="18sp"
+            android:fontFamily="@font/open_sans_regular"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fullNameEdt" />
 
-    <EditText
-        android:id="@+id/bioMtl"
-        android:layout_width="330dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="35dp"
-        android:ems="10"
-        android:hint="@string/bio_hint"
-        android:textSize="18sp"
-        android:gravity="top"
-        android:fontFamily="@font/open_sans_regular"
-        android:inputType="textMultiLine"
-        android:lines="5"
-        android:overScrollMode="never"
-        android:scrollbars="vertical"
-        android:scrollbarStyle="outsideInset"
-        android:scrollHorizontally="false"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/githubHandleEdt" />
+        <EditText
+            android:id="@+id/githubHandleEdt"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="27dp"
+            android:ems="10"
+            android:hint="@string/github_handle_hint"
+            android:textSize="18sp"
+            android:fontFamily="@font/open_sans_regular"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/slackUserNameEdt" />
 
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/saveDetailsBtn"
-        android:layout_width="280dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:text="@string/save_details"
-        android:textAllCaps="false"
-        android:textSize="18sp"
-        android:backgroundTint="@color/slack_red"
-        android:fontFamily="@font/open_sans_bold"
-        app:cornerRadius="25dp"
-        android:padding="5dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/bioMtl" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/bioMtl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:ems="10"
+            android:hint="@string/bio_hint"
+            android:textSize="18sp"
+            android:gravity="top"
+            android:fontFamily="@font/open_sans_regular"
+            android:inputType="textMultiLine"
+            android:lines="4"
+            android:scrollbars="vertical"
+            android:scrollbarStyle="outsideInset"
+            android:scrollHorizontally="false"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/githubHandleEdt" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/saveDetailsBtn"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="@string/save_details_button"
+            android:textAllCaps="false"
+            android:textSize="18sp"
+            android:backgroundTint="@color/slack_red"
+            android:fontFamily="@font/open_sans_bold"
+            app:cornerRadius="25dp"
+            android:padding="5dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/bioMtl" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
+
+

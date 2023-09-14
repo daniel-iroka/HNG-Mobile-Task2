@@ -71,6 +71,6 @@ class PersonalInformationSharedViewModel : ViewModel() {
     }
 
     fun detailsCheck() : Boolean {
-        return !(TextUtils.isEmpty(currentFullName) || TextUtils.isEmpty(currentSlackUsername) || TextUtils.isEmpty(currentGithubHandle) || TextUtils.isEmpty(currentBio))
+        return !(TextUtils.isEmpty(currentFullName) || TextUtils.isEmpty(currentBio))
     }
 }

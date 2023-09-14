@@ -1,153 +1,160 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
+<ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="30dp"
-    android:background="@color/aubergine"
-    tools:context=".ui.HomePageFragment">
-
-    <com.google.android.material.textview.MaterialTextView
-        android:id="@+id/resumeBuilder"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
-        android:fontFamily="@font/open_sans_bold"
-        android:text="@string/resume_builder"
-        android:textColor="@color/white"
-        android:textSize="32sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <com.google.android.material.textview.MaterialTextView
-        android:id="@+id/full_name_tv"
+    android:fillViewport="true">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center"
-        android:text="@string/full_name_header"
-        android:textSize="16sp"
-        android:textColor="@color/white"
-        android:textStyle="italic"
-        android:layout_marginTop="20dp"
-        app:layout_constraintTop_toBottomOf="@+id/resumeBuilder" />
+        android:padding="30dp"
+        android:background="@color/aubergine"
+        tools:context=".ui.HomePageFragment">
 
-    <com.google.android.material.textview.MaterialTextView
-        android:id="@+id/fullNameTv"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:textSize="25sp"
-        android:text="@string/full_name"
-        android:textColor="@color/white"
-        android:textStyle="bold"
-        android:gravity="center"
-        android:fontFamily="@font/open_sans_regular"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/full_name_tv" />
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/resumeBuilder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/open_sans_bold"
+            android:text="@string/resume_builder"
+            android:textColor="@color/white"
+            android:textSize="32sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
-    <com.google.android.material.textview.MaterialTextView
-        android:id="@+id/slack_name_tv"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:text="@string/slack_username_header"
-        android:textSize="16sp"
-        android:textColor="@color/white"
-        android:textStyle="italic"
-        android:layout_marginTop="20dp"
-        android:drawableStart="@drawable/ic_slack_logo"
-        android:drawablePadding="5dp"
-        android:paddingStart="100dp"
-        android:paddingEnd="100dp"
-        app:layout_constraintTop_toBottomOf="@+id/fullNameTv" />
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/full_name_header_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/full_name_header"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/open_sans_italic"
+            android:layout_marginTop="20dp"
+            app:layout_constraintTop_toBottomOf="@+id/resumeBuilder" />
 
-    <com.google.android.material.textview.MaterialTextView
-        android:id="@+id/slackUserNameTv"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:gravity="center"
-        android:textSize="22sp"
-        android:text="@string/slack_username"
-        android:textStyle="bold"
-        android:textColor="@color/white"
-        android:fontFamily="@font/open_sans_regular"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/slack_name_tv" />
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/fullNameTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textSize="25sp"
+            android:text=""
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:fontFamily="@font/open_sans_regular"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/full_name_header_tv" />
 
-    <com.google.android.material.textview.MaterialTextView
-        android:id="@+id/github_handle_name_tv"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:text="@string/github_handle_header"
-        android:textSize="16sp"
-        android:textColor="@color/white"
-        android:textStyle="italic"
-        android:layout_marginTop="20dp"
-        android:drawableStart="@drawable/ic_github_logo"
-        android:drawablePadding="5dp"
-        android:paddingStart="100dp"
-        android:paddingEnd="100dp"
-        app:layout_constraintTop_toBottomOf="@+id/slackUserNameTv" />
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/slack_name_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/slack_header"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/open_sans_italic"
+            android:layout_marginTop="20dp"
+            android:drawableStart="@drawable/ic_slack_logo"
+            android:drawablePadding="5dp"
+            android:paddingStart="100dp"
+            android:paddingEnd="100dp"
+            app:layout_constraintTop_toBottomOf="@+id/fullNameTv" />
 
-    <com.google.android.material.textview.MaterialTextView
-        android:id="@+id/githubHandleTv"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="5dp"
-        android:textSize="22sp"
-        android:text="@string/github_handle"
-        android:textStyle="bold"
-        android:textColor="@color/white"
-        android:gravity="center"
-        android:fontFamily="@font/open_sans_regular"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/github_handle_name_tv" />
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/slackUserNameTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:textSize="22sp"
+            android:text=""
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:fontFamily="@font/open_sans_regular"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/slack_name_tv" />
 
-    <View
-        android:id="@+id/divider"
-        android:layout_width="match_parent"
-        android:layout_height="5dp"
-        android:background="?android:attr/dividerHorizontal"
-        android:backgroundTint="@color/white"
-        android:layout_marginTop="15dp"
-        app:layout_constraintTop_toBottomOf="@id/githubHandleTv"/>
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/github_handle_name_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/github_header"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:textStyle="italic"
+            android:fontFamily="@font/open_sans_italic"
+            android:layout_marginTop="20dp"
+            android:drawableStart="@drawable/ic_github_logo"
+            android:drawablePadding="5dp"
+            android:paddingStart="100dp"
+            android:paddingEnd="100dp"
+            app:layout_constraintTop_toBottomOf="@+id/slackUserNameTv" />
 
-    <com.google.android.material.textview.MaterialTextView
-        android:id="@+id/bioTv"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textSize="18sp"
-        android:text="@string/bio"
-        android:textColor="@color/white"
-        android:fontFamily="@font/open_sans_light"
-        android:gravity="center"
-        android:padding="12dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/divider" />
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/githubHandleTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textSize="22sp"
+            android:text=""
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:fontFamily="@font/open_sans_regular"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/github_handle_name_tv" />
 
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/editDetailsBtn"
-        android:layout_width="200dp"
-        android:layout_height="wrap_content"
-        android:backgroundTint="@color/slack_red"
-        android:fontFamily="@font/open_sans_bold"
-        android:text="@string/edit_text_button"
-        android:textAllCaps="false"
-        android:textColor="@color/white"
-        android:textSize="18sp"
-        app:cornerRadius="25dp"
-        android:padding="5dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/bioTv" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <View
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:background="?android:attr/dividerHorizontal"
+            android:backgroundTint="@color/white"
+            android:layout_marginTop="15dp"
+            app:layout_constraintTop_toBottomOf="@id/githubHandleTv"/>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/bioTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text=""
+            android:textColor="@color/white"
+            android:fontFamily="@font/open_sans_light"
+            android:gravity="center"
+            android:padding="12dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/divider" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/editDetailsBtn"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/slack_red"
+            android:fontFamily="@font/open_sans_bold"
+            android:text="@string/edit_button"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            app:cornerRadius="25dp"
+            android:padding="5dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/bioTv" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
+
