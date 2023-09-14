@@ -29,12 +29,12 @@ plugins {
     id 'androidx.navigation.safeargs'
     id 'kotlin-parcelize'
 }
-```
 
-```
-implementation(platform("org.jetbrains.kotlin:kotlin-bom:1.8.0"))
-implementation "androidx.navigation:navigation-fragment-ktx:2.5.1"
-implementation "androidx.navigation:navigation-ui-ktx:2.5.1"
+depependencies {
+    implementation(platform("org.jetbrains.kotlin:kotlin-bom:1.8.0"))
+    implementation "androidx.navigation:navigation-fragment-ktx:2.5.1"
+    implementation "androidx.navigation:navigation-ui-ktx:2.5.1"
+}
 ```
 
 Follow this steps to run this Project :
