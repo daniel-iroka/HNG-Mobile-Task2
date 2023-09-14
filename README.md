@@ -70,7 +70,7 @@ plugins.
 ## Assumptions
 - Upon running the app for the first timee, it should come prefilled with the User's personal and professional details.
 - Users should also be able to edit this prefilled details and add their own.
-- Users should also be unable to add their details if they leave out an empty field for proper functioning of the app.
+- Users should not be able to add their details if they leave out the required fields for the proper functioning of the app.
 - A Toast message should appear if the User successfully edits their details or leaves out an empty field. 
 - The project should also feature smooth navigation between the two screens without any issues. 
 
